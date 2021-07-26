@@ -91,7 +91,6 @@ app.get('/dog', async function(req,res){
 app.get('/api/getAnimal/:animal', async function(req,res){
   var titulo = req.params.animal;
   console.log(titulo);
-  var animalF;
   var objeto = {
     title: titulo,
     animal: null
