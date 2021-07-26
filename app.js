@@ -70,7 +70,7 @@ app.post("/api/addAnimal", function(req, res) {
       b) animals: con el valor del indice[0]
 */ 
 
-app.get('/dog', async function(req,res){
+app.get('/dog', function(req,res){
   var objeto = {
     title: "Dog",
     dog: animals[0]
@@ -88,7 +88,7 @@ app.get('/dog', async function(req,res){
       a) title:  con el valor obtenido de la ruta dinámica
       b) animal: con la variable que almacena el objeto encontrado. Si no lo encuentra la variable se va vacía
 */ 
-app.get('/api/getAnimal/:animal', async function(req,res){
+app.get('/api/getAnimal/:animal', function(req,res){
   var titulo = req.params.animal;
   console.log(titulo);
   var objeto = {
